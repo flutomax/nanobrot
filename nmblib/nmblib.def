@@ -1,0 +1,19 @@
+LIBRARY	nmblib
+
+EXPORTS
+nmb_create
+nmb_delete
+nmb_calc
+nmb_iterate
+nmb_get_level
+nmb_set_re
+nmb_set_im
+nmb_set_zoom
+nmb_set_bm
+nmb_set_bn
+nmb_set_maxiters
+nmb_set_period
+nmb_find_period_setup
+nmb_find_period_cycle
+nmb_get_radius
+nmb_get_zoom_exponent
