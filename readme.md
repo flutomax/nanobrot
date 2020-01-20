@@ -21,6 +21,8 @@ I spent a considerable amount of time preparing this for the release of Github.
 * Various methods for coloring fractal images, including slope shading.
 * Fractal rendering in a untwisted coordinate system (used for export to the [SoundArt](http://stone-voices.ru/application/soundart?lang=en) program).
 
+## Details
+
 In the course of long work, it was decided to stop at nanoMB version 1, 
 since version 2 proved to be not the best way.
 
