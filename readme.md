@@ -34,3 +34,5 @@ The remaining code modules, including GUI, are implementated at the Object Pasca
 To build the project, you need Delphi XE8 and newer, as well as the component 
 libraries [Graphics32](http://www.graphics32.org/) and 
 [SpTBXLib](http://www.silverpointdevelopment.com/sptbxlib/index.htm). 
+
+Wishes and suggestions, as well as discovered inaccuracies in the program, please inform the developer.
