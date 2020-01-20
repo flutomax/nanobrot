@@ -6,14 +6,14 @@ Nanobrot is a program for high-quality rendering of Mandelbrot fractals with a h
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://paypal.me/flutomax)
 
 This is a fork of the original Kalles Fraktaler by Claude Heiland-Allen.
-The original source is available on Claude's website. 
+The original source is available on Claude's [website](http://www.chillheimer.de/kallesfraktaler/). 
 I spent a considerable amount of time preparing this for the release of Github.
 
 In the course of long work, it was decided to stop at nanoMB version 1, 
 since version 2 proved to be not the best way.
 
 Initially, there was an attempt to implement the code completely on the 
-Pascal Object, but the native C ++ code turned out to be faster, so all 
+Pascal Object, but the native C++ code turned out to be faster, so all 
 the fractal calculation functions were transferred to the dynamic library - nmblib.
 
 To build the project, you need Delphi XE8 and newer, as well as the component 
