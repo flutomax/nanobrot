@@ -5,9 +5,11 @@ Nanobrot is a program for high-quality rendering of Mandelbrot fractals with a h
 [![Download Latest](https://img.shields.io/badge/download-latest-green.svg)](https://github.com/flutomax/nanobrot/releases/)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://paypal.me/flutomax)
 
-This is a fork of the original Kalles Fraktaler by Claude Heiland-Allen.
+This is a fork of the original code by Karl Runmo and Kalles Fraktaler by Claude Heiland-Allen.
 The original source is available on Claude's [website](http://www.chillheimer.de/kallesfraktaler/). 
 I spent a considerable amount of time preparing this for the release of Github.
+
+![ScreenShot](/screenshots/v1.0.png)
 
 In the course of long work, it was decided to stop at nanoMB version 1, 
 since version 2 proved to be not the best way.
