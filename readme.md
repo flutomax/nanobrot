@@ -11,6 +11,16 @@ I spent a considerable amount of time preparing this for the release of Github.
 
 ![ScreenShot](/screenshots/v1.0.png)
 
+## Features
+
+* High quality fractal image rendering using supersampling (up to 16x).
+* Export fractal images in PNG, JPEG, TIFF, GIF, BMP and WDP formats.
+* Fractal Image Printout. 
+* Import and export Kalles Fraktaler program files.
+* Over 2300 color maps for coloring fractal images.
+* Various methods for coloring fractal images, including slope shading.
+* Fractal rendering in a untwisted coordinate system (used for export to the [SoundArt](http://stone-voices.ru/application/soundart?lang=en) program).
+
 In the course of long work, it was decided to stop at nanoMB version 1, 
 since version 2 proved to be not the best way.
 
