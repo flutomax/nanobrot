@@ -38,3 +38,5 @@ libraries [Graphics32](http://www.graphics32.org/) and
 [SpTBXLib](http://www.silverpointdevelopment.com/sptbxlib/index.htm). 
 
 Wishes and suggestions, as well as discovered inaccuracies in the program, please inform the developer.
+
+Download the version compiled for Windows x64 and all the files necessary for the program to work in one archive [here](https://github.com/flutomax/nanobrot/releases/).
