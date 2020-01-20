@@ -19,6 +19,7 @@ I spent a considerable amount of time preparing this for the release of Github.
 * Import and export Kalles Fraktaler files.
 * Over 2300 color maps for coloring fractal images.
 * Various methods for coloring fractal images, including slope shading.
+* Ability to save level maps for later use (using ZLIB or LZMA compression).
 * Fractal rendering in a untwisted coordinate system (used for export to the [SoundArt](http://stone-voices.ru/application/soundart?lang=en) program).
 * Examples
 
