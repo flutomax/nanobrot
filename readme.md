@@ -29,7 +29,7 @@ since version 2 proved to be not the best way.
 Initially, there was an attempt to implement the code completely on the Object Pascal, 
 but the native C++ code turned out to be faster, so all the fractal calculation 
 functions were transferred to the dynamic library - nmblib.
-The remaining software modules, including GUI, are implementated at the Object Pascal in the Delphi IDE.
+The remaining code modules, including GUI, are implementated at the Object Pascal in the Delphi IDE.
 
 To build the project, you need Delphi XE8 and newer, as well as the component 
 libraries [Graphics32](http://www.graphics32.org/) and 
