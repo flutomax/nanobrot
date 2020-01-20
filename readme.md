@@ -20,6 +20,7 @@ I spent a considerable amount of time preparing this for the release of Github.
 * Over 2300 color maps for coloring fractal images.
 * Various methods for coloring fractal images, including slope shading.
 * Fractal rendering in a untwisted coordinate system (used for export to the [SoundArt](http://stone-voices.ru/application/soundart?lang=en) program).
+* Examples
 
 ## Details
 
