@@ -117,6 +117,8 @@
         <DCC_K>false</DCC_K>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <VerInfo_Keys>CompanyName=Vasily Makarov;FileDescription=Nanobrot Fractal Renderer;FileVersion=1.0.0.1;InternalName=;LegalCopyright=Copyright (C) 2019 - 2020 Vasily Makarov;LegalTrademarks=;OriginalFilename=;ProductName=Nanobrot;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>1</VerInfo_Build>
         <SanitizedProjectName>Nanobrot</SanitizedProjectName>
         <DCC_DcuOutput>.\dcu\$(Platform)\$(Config)</DCC_DcuOutput>
         <DCC_ExeOutput>.\out\</DCC_ExeOutput>
@@ -234,9 +236,9 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="1">
-                <DeployFile LocalName="out\Nanobrot.rsm" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile LocalName="res\chasy-s-kukushkoy.wav" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win64">
-                        <RemoteName>Nanobrot.rsm</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -282,9 +284,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="res\chasy-s-kukushkoy.wav" Configuration="Release" Class="ProjectFile">
+                <DeployFile LocalName="out\Nanobrot.rsm" Configuration="Debug" Class="DebugSymbols">
                     <Platform Name="Win64">
-                        <RemoteDir>.\</RemoteDir>
+                        <RemoteName>Nanobrot.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -664,13 +666,13 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>

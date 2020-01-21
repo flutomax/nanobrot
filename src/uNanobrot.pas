@@ -1103,7 +1103,7 @@ begin
   if fException is Exception then
     Application.ShowException(fException)
   else
-    SysUtils.ShowException(fException,nil);
+    SysUtils.ShowException(fException, nil);
 end;
 
 procedure TJobThread.DoMessage;
@@ -1750,21 +1750,21 @@ begin
   fHNmbLib := LoadLibrary(PChar(path));
   if fHNmbLib <> 0 then
   begin
-    @nmb_create := GetProcAddress(fHNmbLib, PChar('nmb_create'));
-    @nmb_delete := GetProcAddress(fHNmbLib, PChar('nmb_delete'));
-    @nmb_calc := GetProcAddress(fHNmbLib, PChar('nmb_calc'));
-    @nmb_iterate := GetProcAddress(fHNmbLib, PChar('nmb_iterate'));
-    @nmb_get_level := GetProcAddress(fHNmbLib, PChar('nmb_get_level'));
-    @nmb_set_re := GetProcAddress(fHNmbLib, PChar('nmb_set_re'));
-    @nmb_set_im := GetProcAddress(fHNmbLib, PChar('nmb_set_im'));
-    @nmb_set_zoom := GetProcAddress(fHNmbLib, PChar('nmb_set_zoom'));
-    @nmb_set_bm := GetProcAddress(fHNmbLib, PChar('nmb_set_bm'));
-    @nmb_set_bn := GetProcAddress(fHNmbLib, PChar('nmb_set_bn'));
-    @nmb_set_maxiters := GetProcAddress(fHNmbLib, PChar('nmb_set_maxiters'));
-    @nmb_set_period := GetProcAddress(fHNmbLib, PChar('nmb_set_period'));
-    @nmb_find_period_setup := GetProcAddress(fHNmbLib, PChar('nmb_find_period_setup'));
-    @nmb_find_period_cycle := GetProcAddress(fHNmbLib, PChar('nmb_find_period_cycle'));
-    @nmb_get_radius := GetProcAddress(fHNmbLib, PChar('nmb_get_radius'));
+    @nmb_create := GetProcAddress(fHNmbLib, 'nmb_create');
+    @nmb_delete := GetProcAddress(fHNmbLib, 'nmb_delete');
+    @nmb_calc := GetProcAddress(fHNmbLib, 'nmb_calc');
+    @nmb_iterate := GetProcAddress(fHNmbLib, 'nmb_iterate');
+    @nmb_get_level := GetProcAddress(fHNmbLib, 'nmb_get_level');
+    @nmb_set_re := GetProcAddress(fHNmbLib, 'nmb_set_re');
+    @nmb_set_im := GetProcAddress(fHNmbLib, 'nmb_set_im');
+    @nmb_set_zoom := GetProcAddress(fHNmbLib, 'nmb_set_zoom');
+    @nmb_set_bm := GetProcAddress(fHNmbLib, 'nmb_set_bm');
+    @nmb_set_bn := GetProcAddress(fHNmbLib, 'nmb_set_bn');
+    @nmb_set_maxiters := GetProcAddress(fHNmbLib, 'nmb_set_maxiters');
+    @nmb_set_period := GetProcAddress(fHNmbLib, 'nmb_set_period');
+    @nmb_find_period_setup := GetProcAddress(fHNmbLib, 'nmb_find_period_setup');
+    @nmb_find_period_cycle := GetProcAddress(fHNmbLib, 'nmb_find_period_cycle');
+    @nmb_get_radius := GetProcAddress(fHNmbLib, 'nmb_get_radius');
 
     if (@nmb_create = nil) or
        (@nmb_delete = nil) or
@@ -1948,6 +1948,7 @@ begin
   AddComand(cidSupersample, fSupersample, Value);
   fSupersample := Value;
   UpdateSupersample;
+  UpdateSlopeCoeff;
   DoChande;
 end;
 
@@ -2084,7 +2085,7 @@ end;
 
 procedure TNanobrot.UpdateSlopeCoeff;
 begin
-  fSlopeCoeff := fSlopePower * (fZoomExp * 1.75 + 1) * (fWidth / 640);
+  fSlopeCoeff := fSlopePower * (fZoomExp * 1.75 + 1) * (fWidth * fSupersample / 640);
 end;
 
 procedure TNanobrot.UpdateSupersample;
